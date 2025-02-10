@@ -1,0 +1,361 @@
+:root {
+    --color-primary: hsl(207, 50%, 90%);
+    --color-secondary: hsl(207, 50%, 10%);
+    --color-tertiary: hsl(267, 80%, 20%);
+    --color-accent: hsl(147, 80%, 20%);
+  
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.125rem;
+    --font-size-xlarge: 1.25rem;
+  
+  }
+.dark {
+    --color-primary: hsl(207, 50%, 10%);
+    --color-secondary: hsl(207, 50%, 90%);
+    --color-tertiary: hsl(267, 80%, 80%);
+    --color-accent: hsl(147, 80%, 80%);
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.125rem;
+    --font-size-xlarge: 1.25rem;
+  
+  }
+  
+section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+} 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+  
+    background-color: var(--color-primary);
+    padding-left: 4.0rem;
+    padding-right: 8.0rem;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position:relative;
+    /* z-index: 2; */
+  }
+  
+.navdiv
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.links{
+    min-width:20%;
+    height: 100%;
+    float:right;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.links a{
+
+    font-size: var(--font-size-xlarge); 
+    text-decoration: none;
+    color: black; 
+    letter-spacing: 4px; 
+    height: 50%;
+    width:100%;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center;
+ 
+}
+
+.links li{
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    list-style-type: none;
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.links  a:hover{
+    background-color: var(--color-accent); 
+  color: white; 
+  border-radius: 10px;
+
+ transition: transform 0.3s ease; 
+
+}
+.links li{
+    list-style-type: none;
+
+}
+
+#logoImage {
+    height: auto ;
+    width: 10vw;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+ 
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.TypeWriterContainer{
+    width: 50%;
+    height: 50%; 
+    margin-left: 4.0rem;
+    padding-top: 4rem;
+    /* border: 2px solid black; */
+  
+}
+.TypeWriterContainer h1{
+    color: black;
+    font-size: 45px;
+}
+
+
+.highlight{
+    color: var(--color-accent)
+}
+
+.subtext{
+    color: var(--color-accent)
+
+}
+
+
+.JumpingArrow img{
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(90deg);
+
+}
+.JumpingArrow{
+    /* background: url('317714_video_youtube_icon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    position: relative;
+   
+
+    width: 3rem;
+    height: 3rem;
+   
+    animation: jump 2s infinite;
+    margin-left: 4rem;
+    margin-top: 21rem;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.SkillSection{
+    text-align: center;
+    background-color:var(--color-primary);
+
+}
+
+.SkillSection h1{
+    font-size: 5rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem
+}
+
+.carousel1
+{
+    display: flex;
+    position: relative;
+    border-block: 1px solid black; 
+    /* padding-block: 8px; */
+    max-width: 90%;
+    margin-inline: auto;
+    height: 15vh;
+    overflow:hidden
+}
+
+.item{
+
+    color: black;
+    border-radius: 24px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width:10vw;
+    height:15vh;
+    margin:1.5rem;
+    align-self: center;
+    position: absolute;
+    gap: 10px;
+    left:100%;
+    animation-name: scrollLeft;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+
+.CertificationList{
+    display: flex;
+
+    justify-content: center;
+    margin-top: 3rem;
+}
+.certificate{
+    height: 10vh;
+    width: 10vw;
+    margin:auto;
+    margin-top: 4rem;
+}
+
+.certificate-logo img{
+    height: 80%;
+    width: 80%;
+
+}
+
+
+@keyframes scrollLeft
+{
+    to{
+        left:-100%
+    }
+}
+
+.item1{
+
+    /* //animation-delay: calc(30s /8  * (8-1) * -1); */
+    animation-delay:2s;
+
+}
+.item2{
+
+animation-delay: 4s;
+
+    
+}
+.item3{
+    animation-delay: 6s;
+
+}
+.item4{
+    animation-delay: 8s;
+ 
+}
+.item5{
+    animation-delay: 10s;
+
+    
+}
+.item6{
+    animation-delay: 12s;
+
+    
+}
+.item7{
+
+    animation-delay: 14s;
+
+}
+.item8{
+    animation-delay: 16s;   
+}
+.item9{
+    animation-delay: 18s;   
+}
+
+.skill-logo img{
+    height: 90%;
+    width: 90%;
+
+}
+
+
+.cards-Container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:3rem;
+}
+
+.card{
+    width: 400px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px var(--color-tertiary);
+    margin:20px;
+}
+
+.card-image{
+    height: auto;
+    width: 100%;
+    
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: inline-block;
+
+}
+
+.card-content h4{
+    display: inline-block;
+    margin-left:200px;
+}
+
+.card-content p{
+    color: #666;
+    font-size:15px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.github-Image{
+   
+
+}
