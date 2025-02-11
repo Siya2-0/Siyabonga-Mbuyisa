@@ -346,7 +346,7 @@ animation-delay: 4s;
 .card-content h4{
     /* display: inline-block; */
     /* margin-left:200px; */
-    text-align: right;  
+    text-align: left;  
     margin-bottom: 8px;
 }
 
