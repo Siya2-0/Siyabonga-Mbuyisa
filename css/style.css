@@ -10,7 +10,7 @@
     --font-size-xlarge: 1.25rem;
   
   }
-.dark {
+/* .dark {
     --color-primary: hsl(207, 50%, 10%);
     --color-secondary: hsl(207, 50%, 90%);
     --color-tertiary: hsl(267, 80%, 80%);
@@ -21,7 +21,7 @@
     --font-size-xlarge: 1.25rem;
   
   }
-  
+   */
 section {
     width: 100%;
     min-height: 100vh;
@@ -368,4 +368,99 @@ animation-delay: 4s;
     line-height: 1.0;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.Lets-Connnect{
+    min-height: 50vh;
+    width: 100%;
+   
+}
+.con{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+
+}
+
+.Lets-Connnect h1{
+    font-size: 15rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.0;
+
+}
+
+.Contact-Container{
+    font-size: 15px;
+    padding-block: 8px;
+    border-block: 1px solid;
+    margin-bottom: 5rem;
+}
+
+.Contact-Container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Profile-Container
+{
+    padding: 10px;
+    border: 1px solid black; 
+    background-color: #ECEBDE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center ;
+    text-align: center;
+    margin-bottom: 8rem;
+    width: 20rem;
+    
+}
+
+.profile-image {
+    width: 60px;
+    height:60px;
+    border-radius: 50%; /* Circular border */
+    border: 1px solid #ffffff; /* Border color and width */
+    object-fit: cover; /*Ensure the image covers the entire area */
+    margin-bottom: 10px; 
+}
+
+
+
+
+.blink-animation-container{
+
+    background-color: #000000;
+    color : white;
+    display: flex;
+    width: 60%;
+    justify-content:center;
+    align-items: center ;
+    margin-bottom: 5px; 
+
+}
+
+.blink-animation{
+    background-color: #45db09;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%; 
+    margin-right: 5%;
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+    0%, 100% {
+        transform: scale(1); /* Initial and final state */
+    }
+    50% {
+        transform: scale(2); /* Middle state (increase size) */
+    }
 }
