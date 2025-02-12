@@ -1,7 +1,7 @@
 :root {
-    --color-primary: hsl(207, 50%, 90%);
-    --color-secondary: hsl(207, 50%, 10%);
-    --color-tertiary: hsl(267, 80%, 20%);
+    --color-primary: #baa495;
+    --color-secondary: #c8c6c2;
+    --color-tertiary:#807166;
     --color-accent: hsl(147, 80%, 20%);
   
     --font-size-small: 0.875rem;
@@ -37,15 +37,15 @@ section {
 
 .navbar{
   
-    background-color: var(--color-primary);
+    /* //background-color: var(--color-primary); */
     padding-left: 4.0rem;
     padding-right: 8.0rem;
     height: 15vh;
     width: 100%;
     display: flex;
     align-items: center;
-    position:relative;
-    /* z-index: 2; */
+    position:absolute;
+    z-index: 2; 
   }
   
 .navdiv
@@ -78,6 +78,7 @@ section {
     display: flex;
     align-items: center; /* Vertically centers the content */
     justify-content: center;
+    padding: 10px;
  
 }
 
@@ -89,11 +90,12 @@ section {
     width: 50%;
     margin-left: 5px;
     margin-right: 5px;
+    padding:2px;
 
 }
 
 .links  a:hover{
-    background-color: var(--color-accent); 
+    background-color: var(--color-tertiary); 
   color: white; 
   border-radius: 10px;
 
@@ -125,14 +127,15 @@ section {
     width: 100%;
     position: relative;
     z-index: 1;
+    
 }
 
 .TypeWriterContainer{
     width: 50%;
     height: 50%; 
     margin-left: 4.0rem;
-    padding-top: 4rem;
-    /* border: 2px solid black; */
+    padding-top: 8rem;
+   
   
 }
 .TypeWriterContainer h1{
@@ -142,11 +145,11 @@ section {
 
 
 .highlight{
-    color: var(--color-accent)
+    color: var(--color-tertiary);
 }
 
 .subtext{
-    color: var(--color-accent)
+    color: var(--color-tertiary)
 
 }
 
@@ -185,7 +188,7 @@ section {
 
 .SkillSection{
     text-align: center;
-    background-color:var(--color-primary);
+    background-color:white;
 
 }
 
@@ -199,12 +202,15 @@ section {
 {
     display: flex;
     position: relative;
-    border-block: 1px solid black; 
-    /* padding-block: 8px; */
+    /* border-block: 1px solid var(--color-tertiary);  */
+    padding-block: 8px;
     max-width: 90%;
     margin-inline: auto;
-    height: 15vh;
-    overflow:hidden
+    min-height: 18vh;
+    overflow:hidden;
+    background-color :var(--color-primary);
+    border-radius: 8px;
+    
 }
 
 .item{
@@ -227,7 +233,9 @@ section {
     animation-duration: 18s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    
+    background-color:var(--color-secondary);
+    border: 2px solid var(--color-tertiary);
+    padding: 10px;
     
 }
 
@@ -240,10 +248,13 @@ section {
     margin-top: 3rem;
 }
 .certificate{
-    height: 10vh;
+    min-height: 10vh;
     width: 10vw;
     margin:auto;
     margin-top: 4rem;
+    background-color:var(--color-secondary);
+    padding: 10px;
+    border: 2px solid var(--color-primary);
 }
 
 .certificate-logo img{
@@ -319,15 +330,16 @@ animation-delay: 4s;
 
 .card{
     width: 400px;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px var(--color-tertiary);
     margin:20px;
+    padding : 5px;
 }
 
 .card-image{
-    height: auto;
+    height: 15rem;
     width: 100%;
     
 }
@@ -385,7 +397,7 @@ animation-delay: 4s;
 }
 
 .Lets-Connnect h1{
-    font-size: 15rem;
+    font-size: 10rem;
     margin-bottom: 1.5rem;
     line-height: 1.0;
 
@@ -393,9 +405,13 @@ animation-delay: 4s;
 
 .Contact-Container{
     font-size: 15px;
+    width: 80%;
+    height: 15vh;
     padding-block: 8px;
     border-block: 1px solid;
     margin-bottom: 5rem;
+    justify-self: center;
+    background-color: var(--color-secondary);
 }
 
 .Contact-Container ul{
@@ -410,7 +426,7 @@ animation-delay: 4s;
 {
     padding: 10px;
     border: 1px solid black; 
-    background-color: #ECEBDE;
+    background-color: var(--color-secondary);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -451,9 +467,12 @@ animation-delay: 4s;
     width: 4px;
     height: 4px;
     border-radius: 50%; 
-    margin-right: 5%;
+    margin-left: 10px;
     animation: blink 1s infinite;
 
+}
+.upper-Text{
+    margin-bottom:15px;
 }
 
 @keyframes blink {
