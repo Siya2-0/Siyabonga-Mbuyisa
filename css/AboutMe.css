@@ -1,0 +1,332 @@
+
+.AboutMeContainer{
+    width:100%;
+    display: flex;
+    padding: 20px;
+
+}
+
+.left{
+    width: 50%;
+    color: black;
+   
+    padding: 20px;
+}
+
+.right{
+    width: 50%;
+    color: black;
+ 
+    padding: 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.AboutMe-sub-text{
+    text-align: center;
+    font-size: 20px;
+    margin: 32px;
+
+}
+
+
+
+
+.card .skill-name {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+
+﻿
+.aboutme {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -54px;
+}
+
+.aboutme .about-header {
+  font-size: 238px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #E0EEEE;
+}
+
+.aboutme div {
+  text-transform: none;
+}
+
+.aboutme div h3 {
+  font-size: 20px;
+}
+
+.aboutme div h3{
+  text-transform: none;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.aboutme div h3 .pink-text{
+  color: #be185d;
+}
+
+.aboutme div h3 .green-text{
+  color: #18be41;
+}
+
+.aboutme div h3 .blue-text{
+  color: #1881be;
+}
+
+.aboutme div h3 .yellow-text{
+  color: #ccf000;
+}
+
+.aboutme div h3 .text-bold {
+  font-weight: bold;
+  position: relative;
+}
+
+.about .aboutme-container {
+  width: 70%;
+}
+
+.aboutme .skills-infinite-scroll {
+  width: fit-content;
+  margin-left: 32px;
+  margin-right: 16px;
+  margin-top: 80px;
+}
+
+.carousel {
+  margin: 0 auto;
+  padding: 16px 0;
+  max-width: 1000px;
+  overflow: hidden;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  color: black;
+  border-radius: 24px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.card .skill-logo img {
+  object-fit: contain;
+  width: 50px;
+}
+
+.card .skill-name {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.carousel {
+  /* ... */
+> * {
+    flex: 0 0 100%;
+  }
+}
+
+.group {
+  display: flex;
+  gap: 0px;
+  padding-right: 0px;
+}
+
+.group-two {
+  display: flex;
+  gap: 0px;
+  padding-right: 0px;
+}
+
+.group {
+  /* ... */
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+}
+
+.group-two {
+  will-change: transform;
+  animation: scrolling-oposite 20s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrolling-oposite {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* .carousel {
+  &:hover .group {
+    animation-play-state: paused;
+  }
+} */
+
+.aboutme .skills-infinite-scroll h1 {
+  text-align: center;
+  font-size: 64px;
+  font-family: "MalintonTrialVersion", sans-serif;
+  margin-bottom: 16px;
+}
+
+.indent {
+  display: block;
+  padding-left: 6rem;
+  text-indent: -2rem;
+}
+
+.title-headers{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+  
+}
+.certificate-card {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.certificate-card.expanded {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #0056b3;
+} */
+
+/* 
+.certificate-title{
+    text-align: center;
+  font-size: 34px;
+  font-family: "MalintonTrialVersion", sans-serif;
+  margin-bottom: 16px;
+
+}
+
+/* .gallery-Container{
+
+    display: flex;
+
+  
+
+} */
+
+/*.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+    margin-bottom: 10rem;
+
+
+}
+.certificate-card {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.certificate-card img{
+    width: 150px;
+    height: 150px;
+    
+
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup img {
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 8px;
+}
+.nav-buttons {
+    margin-top: 10px;
+}
+.btn {
+    padding: 10px;
+    margin: 5px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+} */
