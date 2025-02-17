@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Certificate data using local images from assets folder
     const certificates = [
-        { title: 'Bsc Computer Science', image: 'assets/images/' },
-        { title: 'Data Science', image: 'assets/images/css.png' },
-        { title: 'Machine Learning', image: 'assets/images/cert.jpg' },
-        { title: 'UI/UX Design', image: 'assets/images/cert.jpg' },
-        { title: 'Project Management', image: 'assets/images/cert.jpg' },
+        { title: 'Bsc Computer Science', image: 'assets/images/University-of-Pretoria.jpeg' },
+        { title: 'AWS Cloud Practitioner', image: 'assets/images/cloudPractioner.png' },
+        { title: 'AWS Serverless', image: 'assets/images/aws-training-badge-serverless-technology.a0d2d10c665985544d91af81aaf362e9d31a9116.png' },
+        // { title: 'UI/UX Design', image: 'assets/images/cert.jpg' },
+        // { title: 'Project Management', image: 'assets/images/cert.jpg' },
     ];
 
     let currentIndex = 0;
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${cert.title}</h3>
         `;
         certElement.addEventListener('click', () => openPopup(index));
-        certificateGrid.appendChild(certElement);
+        certificateGrid.insertBefore(certElement, certificateGrid.firstChild);
     });
 
     function openPopup(index) {
