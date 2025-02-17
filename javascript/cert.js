@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Certificate data using local images from assets folder
     const certificates = [
-        { title: 'Web Development', image: 'assets/images/cert.jpg' },
-        { title: 'Data Science', image: 'assets/images/cert.jpg' },
+        { title: 'Bsc Computer Science', image: 'assets/images/' },
+        { title: 'Data Science', image: 'assets/images/css.png' },
         { title: 'Machine Learning', image: 'assets/images/cert.jpg' },
         { title: 'UI/UX Design', image: 'assets/images/cert.jpg' },
         { title: 'Project Management', image: 'assets/images/cert.jpg' },
