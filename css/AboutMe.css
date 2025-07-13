@@ -20,8 +20,10 @@
     padding: 20px;
 }
 .heading{
-    text-align: center;
     font-size: 5rem;
+    line-height: 1.0;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .AboutMe-sub-text{
