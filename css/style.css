@@ -557,3 +557,16 @@ animation-delay: 4s;
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+.CurrentActivities h1{
+    font-size: 5rem;
+    line-height: 1.0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.CurrentActivities{
+    padding: 20px;
+    margin-bottom: 4rem;
+
+}
